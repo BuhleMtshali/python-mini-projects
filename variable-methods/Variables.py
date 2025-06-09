@@ -16,3 +16,7 @@ print(example_link.removeprefix('https://'));
 #assigning multiple values to multiple variable in 1 line
 number, name, decimal = 25, "Buhle", 23.5;
 print(f"Number: {number}\nName: {name}\nDecimal: {decimal}");
+
+#Constants in Python
+CONSTANT_VALUE = "buhle";
+print(CONSTANT_VALUE);
