@@ -16,3 +16,4 @@ if is_student:
     print(f"My name is {first_name}, my age is {age} my school jersey costs R{price} and I'm a student");
 else:
     print("I am not a student!");
+
