@@ -12,3 +12,7 @@ print("\nPython\nJava\nC++");
 #removing a url
 example_link = "https://example.com";
 print(example_link.removeprefix('https://'));
+
+#assigning multiple values to multiple variable in 1 line
+number, name, decimal = 25, "Buhle", 23.5;
+print(f"Number: {number}\nName: {name}\nDecimal: {decimal}");
