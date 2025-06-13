@@ -7,7 +7,11 @@ guests.append("zendaya")
 
 #sorting the list in alpahbetical order
 guests.sort();
-print(f"Sorted list: {guests}")
+print(f"Sorted list: {guests}");
+
+#sorting the list in reverse
+guests.sort(reverse=True);
+print(f"Reversed string: {guests}");
 
 #I will use a loop to send each of them an invite
 for guest in guests:
