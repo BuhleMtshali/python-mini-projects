@@ -7,3 +7,8 @@ print(f"Modified list: {list_example}");
 #adding an element to array
 added_list = list_example.append("zakery");
 print(f"Appended list: {list_example}");
+
+#sorting an element in ascending order
+list_example.sort();
+print(f"Sorted list: {list_example}");
+
