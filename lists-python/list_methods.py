@@ -12,3 +12,6 @@ print(f"Appended list: {list_example}");
 list_example.sort();
 print(f"Sorted list: {list_example}");
 
+#sorting a list in descending order
+list_example.sort(reverse=True);
+print(f"Descending Order: {list_example}");
