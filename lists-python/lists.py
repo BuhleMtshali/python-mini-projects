@@ -40,3 +40,11 @@ for item in example_lists:
 looping_list = ["kate", "buhle", "zinhle", "linda"];
 for name in looping_list:
     print(f"My name is {name.title()}");
+
+#using the pop method which removes the last element on a list and returns it
+popped_element = looping_list.pop();
+print(f"The Popped element is: {popped_element}");
+
+#using a pop method with the index
+popped_index = looping_list.pop(1);
+print(f"The popped elemement by index: {popped_index}");
