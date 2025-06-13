@@ -29,6 +29,9 @@ print(example_lists);
 #finding the length of the list
 print(len(example_lists));
 
+#accessing the last element in a list
+print(f" This is the last element in a list: {example_lists[-1]} ");
+
 #looping through an array
 for item in example_lists:
     print(f" My name is: {item}");
