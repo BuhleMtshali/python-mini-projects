@@ -5,6 +5,10 @@ guests.insert(0, "meg");
 guests.insert(5, "todd");
 guests.append("zendaya")
 
+#sorting the list in alpahbetical order
+guests.sort();
+print(f"Sorted list: {guests}")
+
 #I will use a loop to send each of them an invite
 for guest in guests:
     if guest == "ed":
