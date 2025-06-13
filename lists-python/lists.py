@@ -5,3 +5,7 @@ print(example_lists);
 #accessing elements within  a list
 index_one = example_lists[0];
 print(index_one); #prints the element at index one
+
+#changing an item on a list
+example_lists[0] = "Cindy"; #changed the first element in the array to Cindy
+print(example_lists)
