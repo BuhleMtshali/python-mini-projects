@@ -21,3 +21,14 @@ print(example_lists);
 #removing an element by their value, like remove the element by their name
 example_lists.remove("John");
 print(example_lists);
+
+#removing an element by their position Cindy has been removed from the list
+del example_lists[0];
+print(example_lists);
+
+#finding the length of the list
+print(len(example_lists));
+
+#looping through an array 
+for item in example_lists:
+    print(f" My name is: {item}")
