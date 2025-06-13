@@ -1,4 +1,4 @@
-guests = ["kate", "linda", "robert", "kim", "tonya"] #this is the list of peopl i will be inviting\
+guests = ["kate", "linda", "robert", "kim", "tonya", "zack", "ed", "mike"] #this is the list of peopl i will be inviting\
 
 #I will use a loop to send each of them an invite
 for guest in guests:
