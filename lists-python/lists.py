@@ -29,6 +29,11 @@ print(example_lists);
 #finding the length of the list
 print(len(example_lists));
 
-#looping through an array 
+#looping through an array
 for item in example_lists:
-    print(f" My name is: {item}")
+    print(f" My name is: {item}");
+
+#looping through an array and using the title() method
+looping_list = ["kate", "buhle", "zinhle", "linda"];
+for name in looping_list:
+    print(f"My name is {name.title()}");
