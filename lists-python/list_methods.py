@@ -27,3 +27,7 @@ print(f"New Sorted list: {copy_sorted_list}");
 #reverse sorted list
 copy_reverse_list = sorted(list_example, reverse=True);
 print(f"Reversed  Copy: {copy_reverse_list}");
+
+#reversing a list in random order
+list_example.reverse();
+print(f"Reverse String in Random order: {list_example}");
