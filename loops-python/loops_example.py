@@ -4,3 +4,4 @@ loop_list = ["mary", "john", "dave", "mike" ];
 for list in loop_list:
     print(f"Here is a looped list of names: {list.title()}");
     print(f"Hello, {list}\n")
+print("The loop is done")
