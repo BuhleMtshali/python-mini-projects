@@ -13,4 +13,12 @@ for fruit in range(len(fruits)):
 
 #using a range function to print even numbers
 even_numbers = list(range(2, 11, 2));
-print(f"Even numbers: {even_numbers}")
+print(f"Even numbers: {even_numbers}");
+
+#creating a list of squre values from a range generated values
+square_values = [];
+for value in range(1, 11):
+    square = value ** 2;
+    square_values.append(square);
+
+print(f"Squared Values: {square_values}")
