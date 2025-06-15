@@ -22,3 +22,9 @@ for value in range(1, 11):
     square_values.append(square);
 
 print(f"Squared Values: {square_values}")
+
+#using list for statistics
+random_number = list(range(0, 11));
+print(f"New list: {random_number}")
+print(f"Finding Min: {min(random_number)}")
+print(f"Finding Max: {max(random_number)}")
