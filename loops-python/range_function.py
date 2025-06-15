@@ -28,3 +28,4 @@ random_number = list(range(0, 11));
 print(f"New list: {random_number}")
 print(f"Finding Min: {min(random_number)}")
 print(f"Finding Max: {max(random_number)}")
+print(f"Finding Sum: {sum(random_number)}")
