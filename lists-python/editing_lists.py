@@ -1,1 +1,1 @@
-#to chech
+#to check if user exist we use "in"
