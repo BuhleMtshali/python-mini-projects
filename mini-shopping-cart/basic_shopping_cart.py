@@ -13,7 +13,9 @@ while True:
         if cart:
             print("\n🛍️ Your Cart: ");
             for i, item in enumerate(cart, start=1):
-                print(f"{i}. {item}");        
+                print(f"{i}. {item}");
+        else:
+            print("Your cart is currently empty")        
     elif choice == "2":
         item = input("Enter the item: ");
         if item in cart:
