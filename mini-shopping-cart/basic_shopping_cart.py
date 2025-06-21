@@ -1,7 +1,9 @@
 cart = [];
 
+
+print("\n==== Welcome to the Shopping Cart🛒 ==== \n");
+
 while True:
-    print("\n==== Welcome to the Shopping Cart🛒 ==== ");
     print("1. View Cart Items📋: ");
     print("2. Add Item🥓: ");
     print("3. Remove Item🗑️: ");
@@ -11,25 +13,25 @@ while True:
 
     if choice == "1":
         if cart:
-            print("\n🛍️ Your Cart: ");
+            print("\n🛍️ Your Cart: \n");
             for i, item in enumerate(cart, start=1):
-                print(f"{i}. {item}");
+                print(f"{i}. {item} ");
         else:
             print("Your cart is currently empty")        
     elif choice == "2":
         item = input("Enter the item: ");
         if item in cart:
-            print(f"🚫{item} already in Cart: ");
+            print(f"🚫{item} already in Cart: \n");
         else:
             cart.append(item);
-            print(f"\n{item} has been added to your cart")
+            print(f"\n{item} has been added to your cart\n")
     elif choice == "3":
         item = input("Enter the item to remove: ");
         if item not in cart:
-            print(f"{item} does not exist in cart: ");
+            print(f"{item} does not exist in cart: \n");
         else:
             cart.remove(item);
-            print(f"{item} has been removed from the cart");
+            print(f"{item} has been removed from the cart\n");
     elif choice == "4":
         print("Thank you for shopping🛍️")
         break
