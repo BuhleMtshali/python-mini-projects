@@ -10,4 +10,24 @@ while True:
     choice = input("\nPlease choose an option below📝: ");
 
     if choice == "1":
-        
+        for item in cart:
+            print(f"Your cart currently has: {item}");
+    elif choice == "2":
+        item = input("Enter the item: ");
+        if item in cart:
+            print(f"🚫{item} already in Cart: ");
+        else:
+            cart.append(item);
+    elif choice == "3":
+        item = input("Enter the item to remove: ");
+        if item not in cart:
+            print(f"{item} does not exist in cart: ");
+        else:
+            cart.remove(item);
+            print(f"{item} has been removed from the cart");
+    elif choice == "4":
+        print("Thank you for shopping🛍️")
+        break
+    else:
+        print(f"{choice} is not a valid choice!!");
+
