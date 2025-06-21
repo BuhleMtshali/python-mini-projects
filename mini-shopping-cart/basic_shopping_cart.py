@@ -11,13 +11,14 @@ while True:
 
     if choice == "1":
         for item in cart:
-            print(f"Your cart currently has: {item}");
+            print(f"Your cart currently has: {cart}");
     elif choice == "2":
         item = input("Enter the item: ");
         if item in cart:
             print(f"🚫{item} already in Cart: ");
         else:
             cart.append(item);
+            print(f"\n{item} has been added to your cart")
     elif choice == "3":
         item = input("Enter the item to remove: ");
         if item not in cart:
