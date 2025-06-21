@@ -10,8 +10,10 @@ while True:
     choice = input("\nPlease choose an option below📝: ");
 
     if choice == "1":
-        for item in cart:
-            print(f"Your cart currently has: {cart}");
+        if cart:
+            print("\n🛍️ Your Cart: ");
+            for i, item in enumerate(cart, start=1):
+                print(f"{i}. {item}");        
     elif choice == "2":
         item = input("Enter the item: ");
         if item in cart:
