@@ -15,3 +15,6 @@ people = [
          "city": "joburg"
      }
     ]
+
+for person in people:
+    print(person)
