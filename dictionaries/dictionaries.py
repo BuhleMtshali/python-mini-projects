@@ -17,4 +17,5 @@ people = [
     ]
 
 for person in people:
-    print(person)
+   for name, age, city in person:
+      print(f"{name}, {age}, {city}")
