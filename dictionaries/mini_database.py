@@ -34,4 +34,4 @@ while True:
 #rendering the users
 print("\n==== All users added👫 ===");
 for user in users:
-    print(f"{user['name']}, {user['age']} years old from {user['city']} is a {user['role']}")
+    print(f"{user['name'].title()}, {user['age']} years old from {user['city'].title()} is a {user['role']}")
