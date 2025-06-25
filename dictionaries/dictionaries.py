@@ -17,5 +17,7 @@ people = [
     ]
 
 for person in people:
-   for name, age, city in person:
-      print(f"{name}, {age}, {city}")
+    name = person["name"];
+    age = person["age"];
+    city = person["city"];
+    print(f"Hi I'm {name}, I'm currently {age} years old and I currently live in {city}")
