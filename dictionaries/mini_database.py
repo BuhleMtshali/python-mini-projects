@@ -38,3 +38,12 @@ while True:
     #decide if the loop continues breaks/continues
     if add_more != "yes":
         print(" ---- kay, done adding users ----")
+        break;
+print("=== Here is the list of people who have registered: ");
+for user in users:
+    name = user["name"];
+    last_name = user["last_name"];
+    age = user["age"];
+    phone_number = user["phone_number"];
+    email = user["email"]
+    print(f"\n{name}, {last_name}, {age}, {phone_number}, {email}");
