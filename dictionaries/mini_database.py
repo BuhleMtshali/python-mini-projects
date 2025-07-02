@@ -46,4 +46,12 @@ for user in users:
     age = user["age"];
     phone_number = user["phone_number"];
     email = user["email"]
-    print(f"\nName: {name}, Last Name: {last_name}, Age: {age}, Phone Nunmber: {phone_number}, Email: {email}");
+    print(f"""
+    Name: {name}
+    Last Name: {last_name}
+    Age: {age}
+    Phone Number: {phone_number}
+    Email: {email}
+    """)
+
+    
