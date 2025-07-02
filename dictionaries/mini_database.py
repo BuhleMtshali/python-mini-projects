@@ -20,4 +20,21 @@ while True:
             break
         print("Invalid email format, try again")
 
-    
+    #create the user dictionary/object
+    user = {
+        "name": name,
+        "last_name": last_name,
+        "age": age,
+        "phone_number": phone_number,
+        "email": email
+    }
+
+    #append the user to the array
+    users.append(user)
+
+    #ask if the person wants to add more people
+    add_more = input("Do you want to add another user? (yes/no): ")
+
+    #decide if the loop continues breaks/continues
+    if add_more != "yes":
+        print(" ---- kay, done adding users ----")
