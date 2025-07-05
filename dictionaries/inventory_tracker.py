@@ -47,7 +47,7 @@ while True:
         if add_more != "yes":
             print("✅Successfuly added product to inventory!!!");
             break;
-    if option == "2":
+    elif option == "2":
         if len(inventory) > 0:
             print(f'==== {name}, Here are items in your inventory ====')
             for product in inventory:
@@ -68,3 +68,18 @@ while True:
                 Total Price: R{total}
                 ============================
                       """)
+            else:
+                print(f"{name}, your inventory is currently empty, try adding first")
+    elif option == "3":
+        remove_item = input("Enter the name of the product you want to remove: ");
+        for product in inventory:
+            if remove_item in inventory["product_name"]:
+                del product
+            else:
+                print(f"{remove_item} does not exist in inventory!!")
+    elif option == "4":
+        print(f"Thank you for using the mini inventory app, {name}");
+        break;
+    else:
+        print(f"{option} is not a valid option please try again")
+
