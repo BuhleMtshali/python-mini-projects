@@ -3,7 +3,7 @@ inventory = []
 
 #welcome message
 print("\n---- Welcome to the Mini Inventory Tracker🛒 ----");
-print("===== Please register your Details to create your Inventory =====");
+print("===== Please register your Details to create your Inventory👥 =====");
 name = input("Enter your name: ");
 
 #validate the user's email
@@ -21,4 +21,12 @@ while True:
     print("3. Remove Item🍀: ")
     print("4. Exit❌: ")
 
-    option = input("\nPlease choose an option to continue: ")
+    option = input(f"\n{name} Please choose an option to continue: ");
+
+    if option == "1":
+        product_name = input("Enter the name of product: ");
+        product_quantity = int(input("Enter product quantity: "));
+        product_price = float(input("Enter the price of the product(each) in rands: "));
+        total_price = float(product_price * product_quantity);
+
+        
