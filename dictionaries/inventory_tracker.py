@@ -29,4 +29,42 @@ while True:
         product_price = float(input("Enter the price of the product(each) in rands: "));
         total_price = float(product_price * product_quantity);
 
-        
+        #creating the product dictionary
+        product = {
+            "product_name": product_name,
+            "product_quantity": product_quantity,
+            "product_price": product_price,
+            "total_price": total_price
+        }
+
+        #adding the product to the inventory
+        inventory.append(product)
+
+        #ask if the user wants to add more products
+        add_more = input("Do you want to add another product? (yes/no): ")
+
+        #decide if the loop breaks or continues
+        if add_more != "yes":
+            print("✅Successfuly added product to inventory!!!");
+            break;
+    if option == "2":
+        if len(inventory) > 0:
+            print(f'==== {name}, Here are items in your inventory ====')
+            for product in inventory:
+                name_product = inventory["product_name"];
+                quantity = inventory["product_quantity"];
+                price = inventory["product_price"];
+                total = inventory["total_price"];
+
+                print(f"""
+                ==== User Info👥 ====
+                Name: {name}
+                Email: {user_email}
+                --------------------
+                Product Name: {name_product}
+                Product Quantity: {quantity}
+                Product Price(each): {price}
+                ============================
+                Total Price: R{total}
+                ============================
+                      """)
