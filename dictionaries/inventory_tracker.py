@@ -50,12 +50,17 @@ while True:
             print(f"🚫 {name}, your inventory is currently empty. Try adding something first!")
         else:
             print(f"\n==== {name}, here are your inventory items ====")
-            for product in inventory:
-                print(f"""
+            
+            print(
+                    f"""
 ==== User Info 👥 ====
 Name: {name}
 Email: {user_email}
 --------------------
+                    """
+                )
+            for product in inventory:
+                print(f"""
 Product Name       : {product["product_name"]}
 Product Quantity   : {product["product_quantity"]}
 Product Price(each): R{product["product_price"]}
