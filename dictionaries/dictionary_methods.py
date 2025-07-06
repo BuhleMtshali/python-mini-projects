@@ -1,0 +1,1 @@
+example_dictionary = {'name': 'buhle', 'age': 23, 'profession': 'junior software developer'}
