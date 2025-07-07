@@ -20,3 +20,13 @@ print('=======Favourite Hobby==========')
 for key, value in favorite_language.items():
     
     print(f"{key.capitalize()}: {value.title()}")
+
+languages = {
+    'kate': 'python',
+    'john': 'c',
+    'cindy': 'javascript',
+    'luke': 'c'
+}
+
+for fav_lang in set(languages.values()):
+    print(fav_lang.title())
