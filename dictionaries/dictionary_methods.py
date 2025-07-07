@@ -14,8 +14,9 @@ favorite_language = {
     'jake': 'playing piano',
     'buhle': 'cycling'
 }
-
+friends = ['luke']
 #creating a for loop
 print('=======Favourite Hobby==========')
 for key, value in favorite_language.items():
+    
     print(f"{key.capitalize()}: {value.title()}")
