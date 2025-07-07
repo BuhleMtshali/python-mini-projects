@@ -15,4 +15,7 @@ favorite_language = {
     'buhle': 'cycling'
 }
 
-#
+#creating a for loop
+for key, value in favorite_language.items():
+    print('=======Favourite Languages==========')
+    print(f"{key.capitalize()}: {value.capitalize()}")
