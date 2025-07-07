@@ -1,5 +1,4 @@
-example_dictionary = {'name': 'buhle', 'age': 23, 'profession': 'junior software developer'}
+example_dictionary = [{'name': 'buhle', 'age': 23, 'profession': 'junior software developer'},
+                      {'name': 'zac', 'age': 30, 'profession': 'senior software developer'},
+                      {'name': 'linda', 'age': 27, 'profession': 'ui/ux designer'}]
 
-#using the get() method
-get_value = example_dictionary.get('file', 'key value does not exist')
-print(get_value)
