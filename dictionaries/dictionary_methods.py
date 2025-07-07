@@ -8,3 +8,11 @@ for person in example_dictionary:
     for key, value in person.items():
         print(f"{key.capitalize()}: {value}")
     
+favorite_language = {
+    'jane': 'dancing',
+    'luke': 'reading',
+    'jake': 'playing piano',
+    'buhle': 'cycling'
+}
+
+#
