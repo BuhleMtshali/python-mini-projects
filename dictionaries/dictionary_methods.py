@@ -3,6 +3,8 @@ example_dictionary = [{'name': 'buhle', 'age': 23, 'profession': 'junior softwar
                       {'name': 'linda', 'age': 27, 'profession': 'ui/ux designer'}]
 
 #looping through the list of dictionary
-for key, value in example_dictionary.items():
-    print(f"\nKey: {key}")
-    print(f"\nValue: {value}")
+for person in example_dictionary:
+    print('New Person: ')
+    for key, value in person.items():
+        print(f"{key.capitalize()}: {value}")
+    
