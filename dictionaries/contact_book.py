@@ -10,7 +10,13 @@ print(welcome_message)
 user_name = input("Enter your name👥: ");
 user_lastname = input("Enter your last nameℹ️: ");
 
-#Validating the user's phone number
+#Validating the user's phone number with a while loop
+while True:
+    user_number = input("Enter your 10-digit phone number📲: ")
+    if user_number.isdigit() and len(user_number) == 10:
+        break;
+    else:
+        print("❌ Please enter exactly 10 digits - numbers only!")
 
 
 #validate the email with a while loop
