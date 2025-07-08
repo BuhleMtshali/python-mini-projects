@@ -46,7 +46,8 @@ while True:
     print("1. Add Contact👤: ")
     print("2. View Contact List👥: ")
     print("3. Delete Contact🗑️: ")
-    print("4. Exit❌")
+    print("4. Search Contact🔍:")
+    print("5. Exit❌")
 
     #getting the user's response
     choice = input(f"\n{user_name}, please choose an option to continue: ")
@@ -90,7 +91,7 @@ while True:
 
             for contact in contact_book:
                 print(f"""
-==== Contact Infor👾 ====
+==== Contact Info👾 ====
 Name: {contact["new_contact_name"]}
 Last Name: {contact["new_contact_lastname"]}
 Phone number: {contact["new_contact_number"]}
@@ -102,15 +103,34 @@ Phone number: {contact["new_contact_number"]}
             print("Your Contact Book is currently empty, there's nothing to remove!!!")
         else:
             remove_contact = input("Enter the name of the contact you want to remove: ")
+            found = False
             for contact in contact_book:
                 if remove_contact.lower() == contact["new_contact_name"].lower():
                     contact_book.remove(contact)
                     print(f"✅ {remove_contact} was successfully removed from contact book")
+                    found = True
                     break
-                else:
+                if not found:
                     print(f"🚫 {remove_contact} does not exist in inventory")
+    elif choice == "5":
+        search_name = input("Enter the name of the contact to search for: ")
+        found = False
+        for contact in contact_book:
+            if search_name.lower() in contact["name"].lower():
+                print(f"""
+==== Contact Found🔍 ====
+Name: {contact["name"]}
+Last Name: {contact["lastname"]}
+Phone Number: {contact["number"]}
+=========================
+            """)
+            found = True
+            break
+    if not found:
+        print(f"🚫 No contact found with the name {search_name}")
 
-    elif choice == "4":
+
+    elif choice == "5":
         print(f"👋🏻 Thank you for using Mini Contact Book, {user_name}")
         break
 
