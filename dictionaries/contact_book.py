@@ -49,7 +49,7 @@ while True:
     print("4. Exit❌")
 
     #getting the user's response
-    choice = input(f"\n{user_name}, please choose an option to continue")
+    choice = input(f"\n{user_name}, please choose an option to continue: ")
 
     #creating if statements for the different options
     if choice == "1":
