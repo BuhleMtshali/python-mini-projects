@@ -64,3 +64,19 @@ while True:
                     break
                 else:
                     print(f"{new_contact_name}'s phone number format is incorrect, please try again🚫")
+            
+            #creating the new contact dictionary
+            new_contact = {
+                "new_contact_name": new_contact_name,
+                "new_contact_lastname": new_contact_lastname,
+                "new_contact_number": new_contact_number
+            }
+
+            #append the dictionary to the list
+            contact_book.append(new_contact);
+            print(f"✅ {new_contact_name} has been successfully added to your contact list!!!")
+
+            #ask if the user wants to add more people or break the loop
+            add_more = input("Do you want to add another contact (yes/no): ")
+            if add_more != "yes":
+                break
