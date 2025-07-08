@@ -26,6 +26,20 @@ while True:
         break
     print("Invalid email format🚫")
 
+#show the user's info
+print("✅ User Profile successfully Created👤")
+print(f"""
+--------------------------
+      
+==== User Details👥 ====
+Name👤: {user_name}
+Last Name🧍🏼: {user_lastname}
+Phone Number🔢: {user_number}
+User Email📧: {user_email}
+
+----------------------------
+      """)
+
 #start the loop for the contact book
 while True:
     print(menu_message)
@@ -33,3 +47,6 @@ while True:
     print("2. View Contact List👥: ")
     print("3. Delete Contact🗑️: ")
     print("4. Exit❌")
+
+    #getting the user's response
+    choice = input(f"")
