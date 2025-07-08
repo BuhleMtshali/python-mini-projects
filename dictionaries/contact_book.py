@@ -49,4 +49,18 @@ while True:
     print("4. Exit❌")
 
     #getting the user's response
-    choice = input(f"")
+    choice = input(f"\n{user_name}, please choose an option to continue")
+
+    #creating if statements for the different options
+    if choice == "1":
+        while True:
+            new_contact_name = input("Enter New Contact's Name: ");
+            new_contact_lastname = input("Enter New Contacts Last Name: ")
+
+            #validate the new user's number
+            while True:
+                new_contact_number = input("Enter New Contacts Number: ")
+                if new_contact_number.isdigit() and len(new_contact_number) == 10:
+                    break
+                else:
+                    print(f"{new_contact_name}'s phone number format is incorrect, please try again🚫")
