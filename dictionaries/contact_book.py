@@ -96,3 +96,23 @@ Last Name: {contact["new_contact_lastname"]}
 Phone number: {contact["new_contact_number"]}
 ==================================
                   """)
+                
+    elif choice == "3":
+        if not contact_book:
+            print("Your Contact Book is currently empty, there's nothing to remove!!!")
+        else:
+            remove_contact = input("Enter the name of the contact you want to remove: ")
+            for contact in contact_book:
+                if remove_contact.lower() == contact["new_contact_name"].lower():
+                    contact_book.remove(contact)
+                    print(f"✅ {remove_contact} was successfully removed from contact book")
+                    break
+                else:
+                    print(f"🚫 {remove_contact} does not exist in inventory")
+
+    elif choice == "4":
+        print(f"👋🏻 Thank you for using Mini Contact Book, {user_name}")
+        break
+
+    else:
+        print("❌Invalid choice, please choose 1-4")
