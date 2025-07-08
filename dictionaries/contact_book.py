@@ -80,3 +80,19 @@ while True:
             add_more = input("Do you want to add another contact (yes/no): ")
             if add_more != "yes":
                 break
+
+    elif choice == "2":
+        #if contact book is currently empty
+        if not contact_book:
+            print(f"{user_name}, your contact book is currently empty. Lets add people first!!")
+        else:
+            print(f"\n ----{user_name} here is your contact listℹ️ ----")
+
+            for contact in contact_book:
+                print(f"""
+==== Contact Infor👾 ====
+Name: {contact["new_contact_name"]}
+Last Name: {contact["new_contact_lastname"]}
+Phone number: {contact["new_contact_number"]}
+==================================
+                  """)
