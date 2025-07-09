@@ -2,7 +2,7 @@
 inventory = []
 
 # welcome message
-print("\n---- Welcome to the Mini Inventory Tracker🛒 ----")
+print("\n==== Welcome to the Mini Inventory Tracker🛒 =====")
 print("===== Please register your Details to create your Inventory👥 =====")
 name = input("Enter your name: ")
 
