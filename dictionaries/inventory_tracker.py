@@ -39,7 +39,7 @@ while True:
             }
 
             inventory.append(product)
-            print(f"✅ {product_name} successfully added to inventory!")
+            print(f"✅ {product_name} successfully added to inventory, {name}!")
 
             add_more = input("Do you want to add another product? (yes/no): ").lower()
             if add_more != "yes":
