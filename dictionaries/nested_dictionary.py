@@ -1,8 +1,8 @@
 pizza = {
     'jane': ['chicken', 'cheese'],
     'john': ['vegetarian', 'extra mushrooms', 'extra onion'],
-    'kate': 'no toppings',
-    'mike': ['chicken', 'mushroom', 'burger pizza', 'beef0']
+    'kate': ['no toppings'],
+    'mike': ['chicken', 'mushroom', 'burger pizza', 'beef']
 }
 
 #first loop in the dictionary
