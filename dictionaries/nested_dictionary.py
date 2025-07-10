@@ -9,4 +9,4 @@ pizza = {
 for name, toppings in pizza.items():
     print(f"{name.title()}'s favorite pizza toppings are: ")
     for topping in toppings:
-        print(f"{topping.title()}")
+        print(f" - {topping.title()}")
