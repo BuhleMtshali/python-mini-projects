@@ -6,3 +6,4 @@ while number <= 10:
         print("FizzBuzz!!")
     else:
         print(number)
+    number += 1
