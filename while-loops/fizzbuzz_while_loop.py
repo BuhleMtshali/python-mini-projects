@@ -14,5 +14,3 @@ while number <= 20:
 
 number2 = 10
 
-for i = 0; i <= len(number2); i+= 1:
-    print(i)
