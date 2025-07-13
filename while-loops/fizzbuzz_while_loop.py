@@ -11,3 +11,8 @@ while number <= 20:
     else:
         print(number)
     number += 1
+
+number2 = 10
+
+for i = 0; i <= len(number2); i+= 1:
+    print(i)
