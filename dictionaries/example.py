@@ -45,4 +45,4 @@ peopele = [{
 for person in peopele:
     name = peopele["name"]
     age = peopele["age"]
-    print()
+    print(f"Hello {name}, you are {age} years old!!")
