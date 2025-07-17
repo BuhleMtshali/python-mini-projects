@@ -30,7 +30,7 @@ for user in users:
         print(f"Hello {name}, you're our current users.")
 
 peopele = [{
-    "name": "zeke",
+    "name_person": "zeke",
     "age": 12
     },
     {"name": "lizel",
@@ -43,6 +43,6 @@ peopele = [{
 ]
 
 for person in peopele:
-    name = peopele["name"]
-    age = peopele["age"]
+    name_person = peopele["name"]
+    age_person = peopele["age"]
     print(f"Hello {name}, you are {age} years old!!")
