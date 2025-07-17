@@ -33,16 +33,16 @@ peopele = [{
     "name_person": "zeke",
     "age": 12
     },
-    {"name": "lizel",
+    {"name_person": "lizel",
     "age": 26
     },
     {
-        "name": "tom",
+        "name_person": "tom",
         "age": 14
     }
 ]
 
 for person in peopele:
-    name_person = peopele["name"]
+    name_person = peopele["name_person"]
     age_person = peopele["age"]
     print(f"Hello {name}, you are {age} years old!!")
