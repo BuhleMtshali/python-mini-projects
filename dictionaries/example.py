@@ -29,3 +29,7 @@ for user in users:
     else:
         print(f"Hello {name}, you're our current users.")
 
+peopele = {
+    "name": "zeke",
+    "age": 12
+}
