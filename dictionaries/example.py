@@ -44,3 +44,5 @@ peopele = [{
 
 for person in peopele:
     name = peopele["name"]
+    age = peopele["age"]
+    print()
