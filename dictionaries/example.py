@@ -29,7 +29,18 @@ for user in users:
     else:
         print(f"Hello {name}, you're our current users.")
 
-peopele = {
+peopele = [{
     "name": "zeke",
     "age": 12
-}
+    },
+    {"name": "lizel",
+    "age": 26
+    },
+    {
+        "name": "tom",
+        "age": 14
+    }
+]
+
+for person in peopele:
+    name = peopele["name"]
