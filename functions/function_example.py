@@ -1,6 +1,6 @@
 def greet_user(name):
     """Displaying a simple greeting"""
     name = input("Enter your name: ")
-    print(f"hello {name}, this is my first function.")
+    print(f"hello {name.title()}, this is my first function.")
 
-greet_user(name)
+greet_user('buhle')
